@@ -26,7 +26,23 @@
                 </div>
                 <div class="form-group">
                     <label for="time">Booking Time:</label>
-                    <input type="time" id="time" name="time" required>
+                    <div id="time-buttons">
+                        <div class="button-collumn">
+                            <button type="button" class="time-button" onclick="selectTime('06:20', this)">06:20</button>
+                            <button type="button" class="time-button" onclick="selectTime('08:20', this)">08:20</button>
+                            <button type="button" class="time-button" onclick="selectTime('10:20', this)">10:20</button>
+                        
+                            <button type="button" class="time-button" onclick="selectTime('11:15', this)">12:20</button>
+                            <button type="button" class="time-button" onclick="selectTime('13:10', this)">13:10</button>
+                            <button type="button" class="time-button" onclick="selectTime('14:10', this)">14:10</button>
+                        </div>
+                        <div class="button-collumn">
+                            <button type="button" class="time-button" onclick="selectTime('15:10', this)">15:10</button>
+                            <button type="button" class="time-button" onclick="selectTime('16:05', this)">16:05</button>
+                            <button type="button" class="time-button" onclick="selectTime('17:30', this)">17:30</button>
+                        </div>
+                    </div>
+                    <input type="hidden" id="selected-time" name="time" required>
                 </div>
                 <div class="form-group">
                     <label for="name">Name:</label>
@@ -60,6 +76,7 @@
             </form>
         </div>
     </div>
+    <script src="Booking Form.js"></script>
 </body>
 </html>
 
