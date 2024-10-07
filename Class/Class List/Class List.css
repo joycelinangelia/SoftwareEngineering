@@ -5,11 +5,15 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content is spaced */
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
 }
 
 .container {
+    flex: 1; /* Allow the container to take available space */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,5 +88,36 @@ a {
 }
 
 a:hover {
+    text-decoration: none;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #00416d;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    /* No need for position: relative or bottom */
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.footer-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-list li {
+    margin: 0 15px;
+}
+
+.footer-list a {
+    color: white;
     text-decoration: none;
 }
