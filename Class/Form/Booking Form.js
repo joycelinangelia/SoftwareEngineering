@@ -11,3 +11,19 @@ function selectTime(time, button) {
     // Add the 'selected' class to the clicked button
     button.classList.add('selected'); // Use the button passed as argument
 }
+
+// Function to get query parameter from URL
+function getQueryParameter(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name);
+}
+
+// Pre-fill the class name if available in the URL
+window.onload = function() {
+    const classNameField = document.getElementById('class-name');
+    const className = getQueryParameter('class');
+    if (className) {
+        classNameField.value = className;
+    }
+};
+

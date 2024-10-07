@@ -68,6 +68,15 @@ body {
     font-size: 16px;
 }
 
+#class-name {
+    background-color: rgb(193, 191, 191); 
+    color: #333; 
+    border: 1px solid #ccc; 
+    cursor: not-allowed; 
+    pointer-events: none; /* Makes the field unselectable */
+    user-select: none; /* Prevents text selection */
+}
+
 img {
     display: block;
     margin-left: auto;
@@ -118,7 +127,6 @@ img {
     background-color: #A41F13; /* Darker color when selected */
     border: 1px solid #A41F13;
 }
-
 
 .button-row {
     display: flex;
